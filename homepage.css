@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(3, 3, 54);
+    color: white;
+    padding: 15px 5px;
+}
+
+#logo{
+    height: 50px;
+    width: 100px;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding-left: 1vh;
+}
+
+.others{
+    display: flex;
+    flex-direction: row;
+}
+
+.others p{
+    font-size: small;
+}
+
+.others b{
+    font-size: medium;
+}
+
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.searchbar button{
+    height: 45px;
+    width: 50px;
+}
+
+.searchbar img{
+    height: 30px;
+    width: 20px;
+}
+
+.searchbar input{
+    height: 40px;
+    width: 100vh;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar1 p{
+    margin: 2vh;
+}
+
+#language{
+    margin-top: 2vh;
+}
+
+.cart{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right: 0;
+    margin-top: 10px;
+}
+
+.cart img{
+    height: 40px;
+    width: 40px;
+}
+
+.navbar1 p:hover{
+    padding: 1vh;
+    border: 1px solid white;
+}
+
+
+
+.navbar2{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(4, 4, 70);
+    color: white;
+    width: 100%;
+    padding-left: 20px;
+    margin-bottom: 2vh;
+} 
+
+.navbar2 p{
+    padding: 10px 13px;
+}
+
+.navbar2 p:hover{
+    border: 1px solid white;
+}
