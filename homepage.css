@@ -3,13 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    /* position: relative; */
+    background-color: rgba(128, 128, 128,0.4);
+    overflow-x: hidden;
+}
+
 .navbar1{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 100vw;
     background-color: rgb(3, 3, 54);
     color: white;
-    padding: 15px 5px;
+    padding: 10px 5px;
+    overflow: hidden;
 }
 
 #logo{
@@ -37,10 +45,11 @@
     display: flex;
     flex-direction: row;
     margin-top: 10px;
+    justify-content: space-around;
 }
 
 .searchbar button{
-    height: 45px;
+    height: 40px;
     width: 50px;
 }
 
@@ -51,24 +60,25 @@
 
 .searchbar input{
     height: 40px;
-    width: 100vh;
+    width: 1000px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .navbar1 p{
-    margin: 2vh;
+    text-align: center;
+    margin: 15px;
 }
 
 #language{
-    margin-top: 2vh;
+    margin-top:20px;
 }
 
 .cart{
     position: absolute;
     display: flex;
     flex-direction: row;
-    right: 0;
+    right: 10px;
     margin-top: 10px;
 }
 
@@ -78,7 +88,12 @@
 }
 
 .navbar1 p:hover{
-    padding: 1vh;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+.navbar1 .cart:hover{
+    padding: 5px;
     border: 1px solid white;
 }
 
@@ -87,11 +102,11 @@
 .navbar2{
     display: flex;
     flex-direction: row;
-    background-color: rgb(4, 4, 70);
+    background-color: #232f3e;
     color: white;
     width: 100%;
+    overflow: hidden;
     padding-left: 20px;
-    margin-bottom: 2vh;
 } 
 
 .navbar2 p{
@@ -100,4 +115,174 @@
 
 .navbar2 p:hover{
     border: 1px solid white;
+}
+
+.content{
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow{
+    position: relative;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.images img{
+    width: 100vw;
+}
+
+.slideshow a{
+    position: absolute;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+    padding: 25px 10px;
+    z-index: 1;
+}
+
+.prev{
+    top: 45%;
+    left: 0;
+    z-index: 1;
+}
+
+.next{
+    top: 45%;
+    right: 0;
+    z-index: 1;
+}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0vw 5vw;
+    position: absolute;
+    top: 50%;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.box img{
+    height: 250px;
+    width: 300px;
+    margin: 30px 40px;
+}
+
+.boxes :hover{
+    cursor: pointer;
+}
+
+.products1{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+    margin: 0vw 5vw;
+    padding: 10px;
+    margin-top: 23%;
+}
+
+.products1 img{
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+
+.products1-img{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.boxes2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0vw 5vw;
+    margin-top: 30px;
+}
+
+.products2{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+    margin: 0vw 5vw;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.products2 img{
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+
+.products2-img{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+footer{
+    color: white;
+}
+
+footer .about-us{
+    background-color: #232f3e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px 0;
+    border-bottom: 1px solid white;
+}
+
+footer .about-us div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .about-us div a{
+    text-decoration: none;
+    color: white;
+    padding: 7px 2px;
+}
+
+footer .languages{
+    padding: 50px;
+    background-color: #232f3e;
+}
+
+footer .languages div img{
+    height: 50px;
+    width: 100px;
+}
+
+footer .languages div select{
+    height: 50px;
+    width: 150px;
+    outline: none;
+    color: white;
+    background-color: #232f3e;
+}
+
+footer .languages div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.countries p{
+    margin-top: 30px;
 }
