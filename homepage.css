@@ -263,6 +263,7 @@ footer .languages{
     background-color: #232f3e;
 }
 
+
 footer .languages div img{
     height: 50px;
     width: 100px;
@@ -278,8 +279,9 @@ footer .languages div select{
 
 footer .languages div{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: 0px 50px;
     margin-bottom: 30px;
 }
 
